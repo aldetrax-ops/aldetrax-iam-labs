@@ -1,11 +1,11 @@
 # Local Enterprise IAM Lab (Keycloak)
 
-## 🎯 Objective
+##  Objective
 A hands-on implementation of enterprise Identity and Access Management (IAM) principles using an open-source Identity Provider (IdP). This lab replicates critical access control mechanisms—specifically MFA, RBAC, and system audit logging—without relying on cloud subscription dependencies.
 
 ---
 
-## 🚀 Tech Stack & Architecture
+##  Tech Stack & Architecture
 * **Identity Management:** Keycloak (Latest)
 * **Containerization:** Docker / Docker Compose
 * **Host Environment:** Windows 11 (WSL2 Virtualization Backend)
