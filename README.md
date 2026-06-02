@@ -30,17 +30,3 @@ A hands-on implementation of enterprise Identity and Access Management (IAM) pri
 ## Deployment Blueprint
 
 The environment is containerized via Docker for network and host isolation.
-
-### Orchestration File (`docker-compose.yml`)
-```yaml
-version: '3.8'
-
-services:
-  keycloak:
-    image: quay.io/keycloak/keycloak:latest
-    command: start-dev
-    environment:
-      - KEYCLOAK_ADMIN=admin
-      - KEYCLOAK_ADMIN_PASSWORD=CorpoSecurePassword2026!
-    ports:
-      - "8080:8080"
