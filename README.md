@@ -46,6 +46,7 @@ Symptom: Running deployment commands returned an API communication failure on ro
 
 Root Cause: The underlying Windows Subsystem for Linux (WSL2) virtualization engine layer was unmapped by the host OS daemon, leaving the Docker CLI without an active backend communication path.
 
-Resolution: 1. Triggered a manual system installation and repair of the kernel layer using wsl --install.
+Resolution: 
+1. Triggered a manual system installation and repair of the kernel layer using wsl --install.
 2. Executed a full hardware host reboot to commit the virtualization changes.
 3. Launched the Docker Desktop GUI app manually and waited for the engine health indicator to stabilize to solid Green (Running) before restarting the container deployment.
